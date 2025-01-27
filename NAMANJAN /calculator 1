@@ -11,7 +11,7 @@ public class Main {
         int b = sc.nextInt();
 
         // Prompt for operation choice
-        System.out.println("Choose operation:  1. Subtraction 2. Multiplication 3. Division");
+        System.out.println("Choose operation:  1. Subtraction 2.Addition 3. Multiplication 4. Division");
         int choice = sc.nextInt();
 
         int result = 0;
@@ -21,10 +21,13 @@ public class Main {
             case 1: // Subtraction
                 result = a - b;
                 break;
-            case 2: // Multiplication
+            case 2: // Addition
+                result = a + b;
+                break;
+            case 3: // Multiplication
                 result = a * b;
                 break;
-            case 3: // Division
+            case 4: // Division
                 if (b != 0) {
                     result = a / b;
                 } else {
@@ -33,7 +36,7 @@ public class Main {
                 }
                 break;
             default: // Invalid choice
-                System.out.println("Invalid choice.");
+                System.out.println("It is a Invalid choice.");
                 return;
         }
 
